@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let a, b, x;
+      a = +prompt("Nhập vào số a:");
+      b = +prompt("Nhập vào số b:");
+      if (a !== 0) {
+          if(b !== 0) {
+              x = -b / a;
+              alert("Nghiệm x = " + x);
+          } else {
+              alert("Nghiệm x = 0");
+          }
+      } else if (b === 0) {
+          alert("x có vô số nghiệm");
+      } else {
+          alert("x vô nghiệm")
+      }
+  </script>
+</body>
+</html>

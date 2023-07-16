@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soDien = +prompt("Nhập vào số điện sử dụng trong 1 tháng (đơn vị: kWh):");
+        if(soDien >= 0 && soDien <= 50) {
+            alert("Giá điện tháng này là: " + (soDien * 1678) + " VNĐ");
+        } else if (soDien >= 51 && soDien <= 100) {
+            alert("Giá điện tháng này là: " + (soDien * 1734) + " VNĐ");
+        } else if (soDien >= 101 && soDien <= 200) {
+            alert("Giá điện tháng này là: " + (soDien * 2014) + " VNĐ");
+        } else if (soDien >= 201 && soDien <= 300) {
+            alert("Giá điện tháng này là: " + (soDien * 2536) + " VNĐ");
+        } else if (soDien >= 301 && soDien <= 400) {
+            alert("Giá điện tháng này là: " + (soDien * 2834) + " VNĐ");
+        } else if (soDien >= 401) {
+            alert("Giá điện tháng này là: " + (soDien * 2927) + " VNĐ");
+        }
+        //Nguồn: https://vinid.net/blog/meo-vat-hay/tien-dien-tinh-nhu-the-nao/
+    </script>
+</body>
+</html>

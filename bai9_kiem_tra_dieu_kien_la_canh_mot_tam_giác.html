@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let a = +prompt("Nhập số thứ nhất:");
+    let b = +prompt("Nhập số thứ hai:");
+    let c = +prompt("Nhập số thứ ba:");
+    if (a>0 && b>0 && c>0) {
+      if (a+b > c){
+        alert("3 số vừa nhập là cạnh của một tam giác");
+      } else if (b+c > a) {
+        alert("3 số vừa nhập là cạnh của một tam giác");
+      } else if (a+c > b) {
+        alert("3 số vừa nhập là cạnh của một tam giác");
+      }
+    } else {
+      alert("3 số vừa nhập không phải cạnh của một tam giác");
+    }
+  </script>
+</body>
+</html>

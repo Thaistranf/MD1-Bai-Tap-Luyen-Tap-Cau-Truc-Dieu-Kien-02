@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let tongLuong = parseInt(prompt("Nhập tổng tiền lương trong 1 tháng:"));
+        let luongMienThue = parseInt(prompt("Nhập tổng các khoản thu nhập từ lương được miễn thuế:"));
+        let cacKhoanGiamTru = parseInt(prompt("Nhập tổng các khoản giảm trừ:"));
+        thuNhapTinhThue = tongLuong - luongMienThue - cacKhoanGiamTru;
+
+        if (thuNhapTinhThue <= 5000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 5% là " + (thuNhapTinhThue * 5 / 100));
+        } else if (thuNhapTinhThue > 5000000 && thuNhapTinhThue <= 10000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 10% là " + (thuNhapTinhThue * 10 / 100 + 250000));
+        } else if (thuNhapTinhThue > 10000000 && thuNhapTinhThue <= 18000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 15% là " + (thuNhapTinhThue * 15 / 100 + 750000));
+        } else if (thuNhapTinhThue > 18000000 && thuNhapTinhThue <= 32000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 20% là " + (thuNhapTinhThue * 20 / 100 + 1950000));
+        } else if (thuNhapTinhThue > 32000000 && thuNhapTinhThue <= 52000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 25% là " + (thuNhapTinhThue * 25 / 100 + 4750000));
+        } else if (thuNhapTinhThue > 52000000 && thuNhapTinhThue <= 80000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 30% là " + (thuNhapTinhThue * 30 / 100 + 9750000));
+        } else if (thuNhapTinhThue > 80000000) {
+            alert("Thuế thu nhập cá nhân với thuế suất 35% là " + (thuNhapTinhThue * 35 / 100 + 18150000));
+        }
+    </script>
+</body>
+</html>
